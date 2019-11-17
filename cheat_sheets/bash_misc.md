@@ -9,6 +9,7 @@
 ## everyday stuff
 ### emacs bindings
 fuck emacs. but to get back to it `set -o emacs`
+
 ### vi bindings
 * `set -o vi`
 * `export EDITOR=vim`
