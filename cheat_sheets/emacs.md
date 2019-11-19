@@ -81,3 +81,5 @@
 * `M-(` paredit wrap
 * `C-arrow` slurp and barf
 * `C-M-f/b` jump over subexpression
+
+* `C-c C-q` quit repl
