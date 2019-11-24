@@ -77,9 +77,10 @@
 * `C-c M-n` sets namespace to current dir
 * `C-c C-k` compile code
 * `C-enter` (in REPL) close parens and evaluate
+* `C-c C-q` quit repl
 
+## paredit
 * `M-(` paredit wrap
 * `C-arrow` slurp and barf
 * `C-M-f/b` jump over subexpression
 
-* `C-c C-q` quit repl

@@ -1,34 +1,52 @@
-# VIM
-
-## Navigation
-* hjkl - move cursor 1 char (preface with number for multijump)
+# Core
+## Motions
+* `hjkl` previous/next/up/down char
+* `^` first non-empty char of line
+* `g_` last non-empty char of line
 * `0` start of line
 * `$` end of line
-* `^` first non-empty char of line
 
 * `w` next alphanumeric work
 * `W` next space delimited word
 * `e`/`E` End of word
 * `b`/`B` back one word
 
-* `fx` go to next instance of x in the line. `Fx` goes back. `t`/`T` jumps to before char.
-* `;` and `,` repeat the tochar jump forward or backwards
+* `f/F/t/T` find chars in line. (`;,` for fwd, back)
+
+## Text objects (Use over motions for changes)
+* `iw` Inner word
+* `it` inner tag (for html)
+* `i"` inner quote
+* `ip` inner paragraph
+* `as` a sentence
+
+## Targetting verbs
+* `f/F`, `t/T`: Find in line
+* `/` `?` Search
+
+## Modifying verbs
+* `d` delete
+* `c` change
+* `>` indent
+* `v` visual select
+* `y` yank
+
+## Navigation verbs
+* `G`/`gg` beginning / end of doc
+
+* `HML` Moves cursor to top, middle, bottom of current screen
+* `zz` `zt` `zb`: Moves screen around cursor, so cursor is middle, top, bottom
+* `C-e` `C-y` moves screen down and up without moving cursor
+* `C-u/d` page up/down, halfpage up/down (f/b fullscreen)
 
 * `%` matching brace
-* `(`/`)` previous/next sentence
-* `{` / `}` previous/next para
-* `[[` / `]]` previous/next section
+* `()` previous/next sentence
+* `{}` previous/next para
+* `[[ ]]` previous/next section
 * `[]`  end of previous section
 * `][` end of next section
 
-* `ctrl+f/b/u/d` page up/down, halfpage up/down
-* `H` `M` `L` move to high middle low of current screen.
-* `G`/`gg` beginning / end of doc (preface with no. for jump to line)
-
-* `25|` goes to 25th character in a line
-* `:goto 21490` will go to the 21490th byte in a file
-
-## inserts
+## Insert verbs
 * `i` insert before current char
 * `a` insert after current char
 * `A` insert at end of line
@@ -39,11 +57,10 @@
 * `:r [filename]`
 * `:r ![command`
 
-## deletions
+## Deletion verbs
 * `x` char delete
-* `d` delete key, use follows by the navigation keys
+* `d` delete, follow with noun 
 * `dd` delete line
-* deletion works like a cut, gets put into storage buffer
 * `J` joins current line with one beneath if. `gJ` if you don't want a space
 
 * `c` change. 
@@ -74,6 +91,7 @@
 * `n` / `N` next /  previous occurance
 
 * `*` to find next occurance of current word. `#` for previous. these look for the _exact_ word. `g*` allows partial match
+
 * `:%s/original/replacement[/gc]` find and replace original with replacement. g and c flags relace all and ask for confirmation respectively.
 
 ## Visual select
@@ -82,7 +100,7 @@
 * `ctrl+v` block visual
 * `o` in visual mode, go to other end of block
 
-## bookmarks
+## Bookmarks
 * `m {letter}` set bookmark with leter
 * `:marks` list marks
 * `[backtick] letter` go to bookmark
