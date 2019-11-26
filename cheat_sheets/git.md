@@ -11,3 +11,7 @@ git remote -v
 * set scope to `repo`
 * generate. Copy to clipboard
 * use this instead of your password to push pull etc.
+
+# Branch stuff
+
+* create a new branch and check it out - `$ git checkout -b <branch_name>`
