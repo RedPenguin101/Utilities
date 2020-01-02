@@ -41,6 +41,6 @@ https://clojars.org/com.datomic/datomic-free
 * seesaw - wraps Swing
 
 ### HTTP and webserver
-* clj-http - http client
+* clj-http - http client `[clj-http "3.10.0"]` 
 * compojure - routing library for Ring
 
