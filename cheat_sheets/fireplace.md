@@ -5,3 +5,10 @@
 * `gf` goto file on namespace
 * `K` look up with `doc`
 * `[d` looks up symbol under cursor with `source`
+
+
+# Sexp bindings
+
+* `[[]]` jump around forms
+* `()` jump to nearest paren of that type
+* `>)` (and combos) slurp and barf
