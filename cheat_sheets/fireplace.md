@@ -5,6 +5,7 @@
 * `gf` goto file on namespace
 * `K` look up with `doc`
 * `[d` looks up symbol under cursor with `source`
+* `:%Eval` evals the whole file
 
 
 # Sexp bindings
