@@ -1,0 +1,49 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+"""""""""""""""
+" PLUGINS
+"""""""""""""""
+
+" Markdown Syntax support 
+" https://vimawesome.com/plugin/markdown-syntax
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" Clojure plugins
+Plugin 'tpope/vim-fireplace'
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'luochen1990/rainbow'
+
+" Colour Schemes
+Plugin 'flrnprz/plastic.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"""""""""""""""
+" CONFIGURATION
+"""""""""""""""
+
+set encoding=utf-8
+
+set expandtab
+set softtabstop=2
+set autoindent
+set smartindent
+
+nnoremap <space> za
+
+let g:rainbow_active = 1
+"let g:rainbow_conf = {'ctermfgs': ['red', 'yellow', 'magenta', 'white', 'blue']}
