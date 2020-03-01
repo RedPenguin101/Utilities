@@ -44,17 +44,23 @@
 * `SPC f e f` FAQ
 * `SPC h` help menu
 
-## clojure/cider
+## clojure/cider (`SPC m`)
 
+NOTE: `,` can be substituted for `SPC m`
 * `SPC m` major mode menu
-* `SPC m s i` create and connect to CIDER repl
+* `SPC m s i` OR `, '` create and connect to CIDER repl
 * `SPC m h n` browse to namespace
 * `SPC m e b` Evaluate Buffer
 * `SPC m e f` Evaluate Region
+* `SPC m e e` Evaluate Expression
 * `SPC m s b` Send Buffer to repl
 * `SPC m s f` Send Function to buffer
 * `SPC m t a` Test All
 * `SPC m t t` Test this Test
+* `, s s` Switch between repl and code
+* `, s q` cider quit
+
+* `SPC k s/S/b/B` slurp or barf
 
 ## Git (`SPC g`)
 
