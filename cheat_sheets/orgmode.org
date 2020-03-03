@@ -7,7 +7,7 @@ expand and collapse with TAB on header
    Move blocks up and down with Alt-up / down
 
 * Markup
-  *bold* /italic/ =verbatim= +strikethrough+
+  *bold* (asterisk) /italic/ (forward-slash) =verbatim= (equals) +strikethrough+ (plus)
 
  - bulleted list
  - list
