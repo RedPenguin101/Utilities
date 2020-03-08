@@ -71,3 +71,14 @@ NOTE: `,` can be substituted for `SPC m`
 * `SPC g S` git stage
 * `SPC g m c` git menu commit
 * `SPC g m P p` git m Ppush
+
+## Org mode
+* `TAB` Expand
+* `ALT-up/down` move blocks
+* `,RET` new line of same type
+* `, e e` export
+* `C-c C-, s` add source code block
+* `C-c '` code edit buffer
+* `C-c C-c` execute code
+* `C-c C-t` Toggle todo items
+* `S-Left/Right` shift dates
