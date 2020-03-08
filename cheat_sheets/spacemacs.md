@@ -49,6 +49,8 @@
 NOTE: `,` can be substituted for `SPC m`
 * `SPC m` major mode menu
 * `SPC m s i` OR `, '` create and connect to CIDER repl
+* `, s N` put REPL in current namespace (and focus)
+
 * `SPC m h n` browse to namespace
 * `SPC m e b` Evaluate Buffer
 * `SPC m e f` Evaluate Region
