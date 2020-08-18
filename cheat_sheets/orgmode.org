@@ -1,0 +1,90 @@
+* Headers with * or ,*
+Text text text
+expand and collapse with TAB on header
+
+** Lower level header with **. New line of same type with ,RET
+** Like that
+   Move blocks up and down with Alt-up / down
+
+* Markup
+  *bold* (asterisk) /italic/ (forward-slash) =verbatim= (equals) +strikethrough+ (plus)
+
+ - bulleted list
+ - list
+ - items
+  
+ , i l insert link
+
+ can link to files, emails, to-do items
+
+* Tables
+
+  create 'header row' with |- TAB
+
+| some | data           |
+|------+----------------|
+|   12 | buckly my shoe |
+|   34 | shuth the door |
+|      |                |
+
+tab between cells
+
+alt-up/down/left/right to reorder
+
+LOTS of complexity here, can eval arbitrary elisp
+
+* Export to other formats
+  
+, e e to get to menu buffer with options
+
+iCal, HTML, Markdown
+
+* Metadata with #+
+
+#+TITLE: A gentle intro to Org-Mode
+#+OPTIONS: toc:nil
+
+* Source code
+
+#+BEGIN_SRC clojure
+  (range 10)
+#+END_SRC
+
+C-c ' to drop into a buffer which you can write code in
+C-c C-c to execute
+<s TAB inputs blocks as template
+
+* LaTex
+
+- Characters: \alpha \rightarrow \beta
+- $O(n \log n)$
+
+\begin{align*}
+  3 * 2 + 1 &= 6 + 1\\
+            &= 7
+\end{align*}
+
+* Literate programming
+
+Evaluate all source blocks 
+
+Cool thing, use org file as config and load it with 
+
+~~(org-babel-load-file "~/.emacs.d/configuration.org")~~
+
+in init.el which will evaulate all the code sequentially
+
+babel is a plugin which goes through an org file and creates a source code file from it.
+
+* Todo stuff
+
+** TODO hit C-c C-t to mark something as done
+** DONE Like this (actually cycles nothing, todo, done)
+   CLOSED: [2020-03-01 Sun 17:37]
+
+Modify dates with S-left/right
+
+** TODO calendar for deadlines with C-c C-d
+   DEADLINE: <2020-03-06 Fri>
+
+C-c a to do agenda stuff
