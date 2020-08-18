@@ -23,7 +23,6 @@
 * `SPC b n/p` Buffer Next/Previous
 
 ## Files (`SPC f`)
-
 * `SPC f` access files menu
 * `SPC f f` Files Files (searchable files)
 * `SPC f r` Files Recent
@@ -31,11 +30,9 @@
 * `SPC f S` File Save ALL
 
 ## Project (`SPC p`)
-
 * `SPC a d` open a project
 
 ## Configuration and documentation
-
 * `SPC h SPC` layers and config documentation
 * `SPC f e d` open spacemacs config
 * `SPC T n` cycle themes
@@ -44,8 +41,11 @@
 * `SPC f e f` FAQ
 * `SPC h` help menu
 
-## clojure/cider (`SPC m`)
+## Evil tools (search)
+* `SPC s e` iedit - search and replace multiple matches
+* `g r` multiple current
 
+## clojure/cider (`SPC m`)
 NOTE: `,` can be substituted for `SPC m`
 * `SPC m` major mode menu
 * `SPC m s i` OR `, '` create and connect to CIDER repl
@@ -64,7 +64,7 @@ NOTE: `,` can be substituted for `SPC m`
 
 * `SPC k s/S/b/B` slurp or barf
 
-## Git (`SPC g`)
+## MaGit (`SPC g`)
 
 * `SPC g s` git status
 * `SPC g m` git menu

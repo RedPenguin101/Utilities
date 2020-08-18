@@ -50,6 +50,7 @@ iCal, HTML, Markdown
   (range 10)
 #+END_SRC
 
+`C-c C-, s` add source code block
 C-c ' to drop into a buffer which you can write code in
 C-c C-c to execute
 <s TAB inputs blocks as template
@@ -75,7 +76,6 @@ Cool thing, use org file as config and load it with
 in init.el which will evaulate all the code sequentially
 
 babel is a plugin which goes through an org file and creates a source code file from it.
-
 * Todo stuff
 
 ** TODO hit C-c C-t to mark something as done
@@ -88,3 +88,6 @@ Modify dates with S-left/right
    DEADLINE: <2020-03-06 Fri>
 
 C-c a to do agenda stuff
+* Journal
++ =SPC a o j j= opens a new journal entry
++ =, p= and =, n= previous and next entries
