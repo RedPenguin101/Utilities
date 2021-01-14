@@ -1,0 +1,42 @@
+;; The deps.edn file describes the information needed to build a classpath.
+;;
+;; When using the `clojure` or `clj` script, there are several deps.edn files
+;; that are combined:
+;; - install-level
+;; - user level (this file)
+;; - project level (current directory when invoked)
+;;
+;; For all attributes other than :paths, these config files are merged left to right.
+;; Only the last :paths is kept and others are dropped.
+
+{:aliases
+ 
+ {:test {:extra-paths ["test" "src/test/clojure"]
+         :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}
+  
+  :depstar {:replace-deps {seancorfield/depstar {:mvn/version "2.0.165"}}
+            :ns-default hf.depstar
+            :exec-args {}}
+  
+  ;; - see https://github.com/cognitect-labs/test-runner
+  ;; - run your tests: clj -A:test:runner 
+  :runner {:extra-deps {com.cognitect/test-runner
+                        {:git/url "https://github.com/cognitect-labs/test-runner"
+                         :sha "3cb0a9daf1cb746259dc8309b218f9211ad3b33b"}}
+           :main-opts ["-m" "cognitect.test-runner"
+                       "-d" "test"
+                       "-d" "src/test/clojure"]}
+  :socket {:jvm-opts ["-Dclojure.server.repl={:port,5555,:accept,clojure.core.server/repl}"]}
+
+  ;; - see https://github.com/bhauman/rebel-readline
+  ;; - start a Rebel Readline REPL:
+  :rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "RELEASE"}}
+          :main-opts ["-m" "rebel-readline.main"]}
+  
+  ;; - see https://github.com/vlaaad/reveal
+  :reveal
+  {:extra-deps {vlaaad/reveal {:mvn/version "RELEASE"}}
+   :main-opts ["-m" "vlaaad.reveal" "repl"]
+   ;; make the font more readable:
+   :jvm-opts ["-Dvlaaad.reveal.prefs={:font-size,24}"]}
+  }}
